@@ -5,12 +5,12 @@
   "scripts": {
     "db:docs": "dotenv -e .env.local prisma-docs-generator serve",
     "db:generate": "dotenv -e .env.local prisma generate",
-    "db:migrate": "dotenv -e .env.local prisma migrate",
+    "db:migrate": "dotenv -e .env.local prisma migrate dev",
     "db:push": "dotenv -e .env.local prisma db push",
     "db:seed": "dotenv -e .env.local prisma db seed",
     "db:studio": "dotenv -e .env.local prisma studio",
     "dev": "prisma generate && next dev",
-    "build": "prisma generate && prisma db push && prisma db seed && next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint"
   },
