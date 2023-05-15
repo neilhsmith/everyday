@@ -20,7 +20,7 @@ npm run dev
 
 ### Prisma
 
-Use the scripts provided in the package.json instead of npx because prisma doesn't load env vars from .env.local by default:
+Use the scripts provided in the package.json instead of npx to ensure environment vars are loaded properly:
 
 `npm run db:docs` Serves Prisma docs
 
