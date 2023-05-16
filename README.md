@@ -22,16 +22,4 @@ npm run dev
 
 ### Prisma
 
-Use the scripts provided in the package.json instead of npx to ensure environment vars are loaded properly:
-
-`npm run db:docs` Serves Prisma docs
-
-`npm run db:generate` Generates the prisma client & docs
-
-`npm run db:migrate` Creates & runs a migration
-
-`npm run db:push` Synchronizes the prisma schema with the database schema
-
-`npm run db:seed` Runs the seed script
-
-`npm run db:studio` Launchs Prisma Studio
+TODO: document prisma commands & dev processes

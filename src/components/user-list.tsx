@@ -1,7 +1,7 @@
 import prisma from "@/lib/prisma"
 
 export default async function UserList() {
-  const users = await prisma.users.findMany()
+  const users = await prisma.user.findMany()
 
   return (
     <ul>
