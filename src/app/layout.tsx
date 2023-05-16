@@ -1,9 +1,9 @@
 import "./globals.css"
-import { inter } from "@/styles/fonts"
+import { inter } from "@/app/fonts"
 import Providers from "@/app/providers"
-import SkipToContent from "@/components/skip-to-content"
-import Header from "@/components/header"
-import Container from "@/components/container"
+import SkipToContent from "@/app/components/skip-to-content"
+import Header from "@/app/components/header"
+import Container from "@/app/components/container"
 
 export const metadata = {
   title: "Everyday",
