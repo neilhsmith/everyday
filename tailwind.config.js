@@ -1,4 +1,4 @@
-import theme from "./src/styles/theme"
+import theme from "./src/app/theme"
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

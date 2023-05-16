@@ -1,5 +1,3 @@
-"use client"
-
 import { ComponentPropsWithoutRef, PropsWithChildren } from "react"
 import { cx } from "class-variance-authority"
 
