@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import UserList from "@/components/user-list"
+import UserList from "@/app/components/user-list"
 
 export default function Home() {
   return (

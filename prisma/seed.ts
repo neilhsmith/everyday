@@ -1,4 +1,4 @@
-import prisma from "../src/lib/prisma"
+import prisma from "../src/app/lib/prisma"
 
 async function main() {
   // const response = await Promise.all([

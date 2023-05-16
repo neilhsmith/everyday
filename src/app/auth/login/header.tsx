@@ -1,4 +1,4 @@
-import PageHeader from "@/components/page-header"
+import PageHeader from "@/app/components/page-header"
 import LoginIcon from "./icon"
 
 export default function LoginHeader() {

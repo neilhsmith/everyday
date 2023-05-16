@@ -1,17 +1,19 @@
 "use client"
 
 import { signIn } from "next-auth/react"
-import DiscordButton from "@/components/social-buttons/discord"
-import TwitterButton from "@/components/social-buttons/twitter"
-import FacebookButton from "@/components/social-buttons/facebook"
-import GoogleButton from "@/components/social-buttons/google"
-
-// TODO: prefer the callbackUrl query param if it exists
-const options = {
-  callbackUrl: "/settings",
-}
+import DiscordButton from "@/app/components/social-buttons/discord"
+import TwitterButton from "@/app/components/social-buttons/twitter"
+import FacebookButton from "@/app/components/social-buttons/facebook"
+import GoogleButton from "@/app/components/social-buttons/google"
+import { useSearchParams } from "next/navigation"
+import { useMemo } from "react"
 
 export default function SocialLoginList() {
+  const searchParams = useSearchParams()
+  const callbackUrl = searchParams.get("callbackUrl") ?? "/"
+
+  const options = useMemo(() => ({ callbackUrl }), [callbackUrl])
+
   return (
     <ul className="flex gap-2 md:gap-3 lg:gap-4 justify-center">
       <li>

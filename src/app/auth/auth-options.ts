@@ -1,12 +1,12 @@
 import { NextAuthOptions } from "next-auth"
 import { PrismaAdapter } from "@next-auth/prisma-adapter"
 import DiscordProvider from "next-auth/providers/discord"
-import prisma from "@/lib/prisma"
+import prisma from "@/app/lib/prisma"
 
 const authOptions: NextAuthOptions = {
-  session: {
-    strategy: "jwt",
-  },
+  // session: {
+  //   strategy: "jwt",
+  // },
   adapter: PrismaAdapter(prisma),
   pages: {
     signIn: "/auth/login",
