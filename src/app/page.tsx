@@ -1,5 +1,5 @@
-import UserList from "@/components/user-list"
 import { Suspense } from "react"
+import UserList from "@/components/user-list"
 
 export default function Home() {
   return (
